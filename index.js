@@ -69,7 +69,7 @@ function createPane(opts, ready, done) {
       split: opts.split
     , searchAllPanes: !!opts.searchAllPanes
     , changeFocus: opts.changeFocus !== false
-  }).done(function(node) {
+  }).then(function(node) {
     ready(null, node)
   })
 
